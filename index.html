@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id = "header">
+          <div><a href = "./index.html">Home Page</a></div>
+          <div><a href = "./search.html">Search Page</a></div>
+    </div>
+
+    <select name="" id="brewerySelect">
+          <option value="planning">Planning</option>
+          <option value="micro">Micro</option>
+          <option value="brewpub">Brewpub</option>
+    </select>
+
+    <table id = "breweryTable">
+             <thead>
+                     <tr>
+                           <th>Name</th>
+                           <th>brewery_type</th>
+                           <th>City</th>
+                           <th>State</th>
+                     </tr>
+             </thead>
+             <tbody id = "tbody"></tbody>
+    </table>
+</body>
+   <script src = "./index.js"></script>
+</html>
