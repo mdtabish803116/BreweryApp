@@ -12,6 +12,7 @@ async function getData(){
     let inputVal = document.getElementById("searchInput").value;
     let res = await fetch(`https://api.openbrewerydb.org/breweries/search?query=${inputVal}`);
     let data = await res.json();
+    console.log(data);
     displayBreweryData(data);
 
     let temp = JSON.parse(JSON.stringify(data));
